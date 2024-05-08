@@ -143,17 +143,36 @@ nav {
   line-height: 20px; }
 
 .main-index .carousel {
-  /*width: 90%;*/
-  /*img {
-            width: 100%;
-            height: 500px;
-            margin: 0;
-        }*/ }
+  /*width: 90%;*/ }
   .main-index .carousel .carousel-item {
     width: 100%;
     height: 500px; }
   .main-index .carousel .carousel-item.active {
     display: flex; }
+  .main-index .carousel .carousel-control-prev-icon,
+  .main-index .carousel .carousel-control-next-icon,
+  .main-index .carousel .sr-only,
+  .main-index .carousel .sr-onlyn {
+    filter: invert(108%);
+    font-weight: bold; }
+  .main-index .carousel .carousel-caption {
+    background-color: #ABB2B9;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    zoom: 1;
+    padding: 10px 50px; }
+    .main-index .carousel .carousel-caption h5 {
+      color: #2C3E50;
+      text-align: left;
+      font-size: xx-large;
+      width: 100%;
+      opacity: initial; }
+    .main-index .carousel .carousel-caption p {
+      color: #2C3E50;
+      text-align: left;
+      font-size: x-large;
+      width: 100%;
+      opacity: initial; }
 
 .main-index h1 {
   color: white;

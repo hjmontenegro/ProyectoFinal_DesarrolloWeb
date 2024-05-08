@@ -11,13 +11,38 @@
             display: flex;
         }
 
+        .carousel-control-prev-icon, 
+        .carousel-control-next-icon,
+        .sr-only, 
+        .sr-onlyn {
+            filter: invert(108%);
+            font-weight: bold;
+        }
+        .carousel-caption {
+            background-color: #ABB2B9;
+            opacity: 0.5;
+            filter: alpha(opacity=50); 
+            zoom: 1; 
+            padding: 10px 50px;
+            h5 {
+                color: #2C3E50;
+                text-align: left;
+                font-size: xx-large;
+                width: 100%;
+                opacity: initial;
+                
+            }
 
-
-        /*img {
-            width: 100%;
-            height: 500px;
-            margin: 0;
-        }*/
+            p {
+                color: #2C3E50;
+                text-align: left;
+                font-size: x-large;
+                width: 100%;
+                opacity: initial;
+                
+            }
+        }
+        
     }
     h1 {
         color: rgb(255, 255, 255);
