@@ -4,44 +4,14 @@
 
         .carousel-item {
             height: 500px;
-
+            min-height: 300px;
+            background: no-repeat center bottom scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
             .active {
                 display: flex;
-            }
-
-            h1 {
-                color: rgb(255, 255, 255);
-                background-color: #333;
-                text-align: center;
-                font-family: Handlock;
-                font-weight: bold;
-            }
-        
-            
-
-            .carousel-caption {
-                background-color: #ABB2B9;
-                opacity: 0.5;
-                filter: alpha(opacity=50); 
-                zoom: 1; 
-                padding: 10px 50px;
-                h5 {
-                    color: #2C3E50;
-                    text-align: left;
-                    font-size: xx-large;
-                    width: 100%;
-                    opacity: initial;
-                    
-                }
-    
-                p {
-                    color: #2C3E50;
-                    text-align: left;
-                    font-size: x-large;
-                    width: 100%;
-                    opacity: initial;
-                    
-                }
             }
         }
 
@@ -52,9 +22,33 @@
             filter: invert(108%);
             font-weight: bold;
         }
-        
+        .carousel-caption {
+            background-color: #ABB2B9;
+            opacity: 0.5;
+            filter: alpha(opacity=50); 
+            zoom: 1; 
+            padding: 10px 50px;
+            h5 {
+                color: #2C3E50;
+                text-align: left;
+                font-size: xx-large;
+                width: 100%;
+                opacity: initial;
+                font-weight: bold;
+            }
+
+            p {
+                color: #2C3E50;
+                text-align: left;
+                font-size: x-large;
+                width: 100%;
+                opacity: initial;
+            }
+        }
         
     }
+
+
     
     
 }
