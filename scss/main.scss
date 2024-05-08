@@ -1,0 +1,15 @@
+//Utilidades
+@import './utilidades/clases-globales';
+
+//reset siempre queda abajo
+@import './utilidades/reset';
+
+
+//Seccion Producto
+@import './secciones/caja_producto';
+
+//Secciones
+@import './secciones/header';
+@import './secciones/index';
+@import './secciones/footer';
+
