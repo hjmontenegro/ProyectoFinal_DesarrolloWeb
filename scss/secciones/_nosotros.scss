@@ -21,6 +21,9 @@
         align-items: center;
         padding: 10px;*/
         @extend .flex-column;
+        img {
+           width: 100%;
+        }
     }
 
     h3 {
@@ -30,6 +33,7 @@
         letter-spacing: normal;
         line-height: 20px;
         width: 100%;
+        color: #2C3E50;
     }
     h2 {
         background-color: #333;

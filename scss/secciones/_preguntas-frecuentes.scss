@@ -1,8 +1,115 @@
 .main-preguntas {
-    h2 {
-        background-color: orangered;
-        color: white; 
-        text-align: center;
-        font-weight: bold;
+
+    .grid-tarjetas {
+        display: grid;
+        margin: 30px 50px;
+        grid-template-areas:
+            "img1 img2 img3 img4 img5 img6 img7"
+            "img8 img9 img10 img11 img12 img13 img14"
+        ;
+        width: 100%;
+        grid-template-columns: repeat(7, 110px);
+        grid-template-rows: repeat(2, 75px);
+    }
+
+    @media (max-width : 990px) {
+        .grid-tarjetas {
+            display: grid;
+            grid-template-areas:
+                "img1 img2 img3 img4" 
+                "img5 img6 img7 img8" 
+                "img9 img10 img11 img12" 
+                "img13 img13 img14 img14"
+            ;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(4, 75px);
+        }
+    }
+
+    @media (max-width : 520px) {
+        .grid-tarjetas {
+            display: grid;
+            grid-template-areas:
+                "img1 img2"
+                "img3 img4" 
+                "img5 img6"
+                "img7 img8" 
+                "img9 img10"
+                "img11 img12" 
+                "img13 img14"
+            ;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(7, 75px);
+        }
+    }
+
+        .img-visa {
+            grid-area: img1;
+        }
+
+        .img-master {
+            grid-area: img2;
+        }
+
+        .img-american {
+            grid-area: img3;
+        }
+
+        .img-diners {
+            grid-area: img4;
+        }
+
+        .img-banelco {
+            grid-area: img5;
+        }
+
+        .img-cabal {
+            grid-area: img6;
+        }
+
+        .img-naranja {
+            grid-area: img7;
+        }
+
+        .img-shopping {
+            grid-area: img8;
+        }
+
+        .img-mpago {
+            grid-area: img9;
+        }
+
+        .img-argencard {
+            grid-area: img10;
+        }
+
+        .img-nativa {
+            grid-area: img11;
+        }
+
+        .img-cencosud {
+            grid-area: img12;
+        }
+
+        .img-pfacil {
+            grid-area: img13;
+        }
+
+        .img-rapi {
+            grid-area: img14;
+        }
+
+    
+
+   
+    .accordion-button,
+    .accordion-button:not(.collapsed) {
+        background-color: $fondo;
+        color: white;
+    }
+
+    .accordion {
+        --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     }
 }

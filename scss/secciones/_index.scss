@@ -1,4 +1,4 @@
-.main-index { 
+.main-index {
     .carousel {
         /*width: 90%;*/
 
@@ -10,24 +10,27 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+
             .active {
                 display: flex;
             }
         }
 
-        .carousel-control-prev-icon, 
+        .carousel-control-prev-icon,
         .carousel-control-next-icon,
-        .sr-only, 
+        .sr-only,
         .sr-onlyn {
-            filter: invert(108%);
+            /*filter: invert(108%);*/
             font-weight: bold;
         }
+
         .carousel-caption {
             background-color: #ABB2B9;
             opacity: 0.5;
-            filter: alpha(opacity=50); 
-            zoom: 1; 
+            filter: alpha(opacity=50);
+            zoom: 1;
             padding: 10px 50px;
+
             h5 {
                 color: #2C3E50;
                 text-align: left;
@@ -45,10 +48,5 @@
                 opacity: initial;
             }
         }
-        
     }
-
-
-    
-    
 }
