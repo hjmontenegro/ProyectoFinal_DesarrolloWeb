@@ -151,6 +151,8 @@
         </div>
     </footer>
     <!-- JavaScript -->
+
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -161,7 +163,31 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <script>
+        $('form').on('submit', function(event) {
+            event.preventDefault();
+            swal({
+                title: "¿Confirma el envío del mensaje?",
+                //text: "Si confirma el envío, nos pondremos en contacto a la brevedad.",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+                })
+                .then((willDelete) => {
+                if (willDelete) {
+                    swal("Gracias, nos pondremos en contacto a la brevedad!", {
+                    icon: "success",
+                    });
+                    //this.submit();
+                } else {
+                    swal("El mensaje no sera enviado.");
+                    
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
